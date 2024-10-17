@@ -24,8 +24,8 @@ class MovieApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             routerConfig: AppRouter.router,
             themeMode: state.isDark ? ThemeMode.dark : ThemeMode.light,
-            darkTheme: darkTheme,
-            theme: lightTheme,
+            darkTheme: CustomAppThemes.darkTheme,
+            theme: CustomAppThemes.lightTheme,
           );
         },
       ),

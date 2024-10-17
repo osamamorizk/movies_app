@@ -11,13 +11,12 @@ class ProfileView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ListTile(
-            contentPadding: EdgeInsets.all(0),
+            contentPadding: const EdgeInsets.all(0),
             leading: Text(
               'Dark Mode',
-              style:
-                  Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize: 26),
+              style: Theme.of(context).textTheme.titleLarge,
             ),
-            trailing: ThemeToggel(),
+            trailing: const ThemeToggel(),
           ),
         ],
       ),
